@@ -1,6 +1,5 @@
-# 🎯 UI Cleaner Extension for YouTube & Instagram
-
-This Chrome extension allows you to **customize, hide, and simplify** sections of YouTube and Instagram for a cleaner, distraction-free experience.  
+# 🎯 UI Cleaner Extension for YouTube 
+This Chrome extension allows you to **customize, hide, and simplify** sections of YouTube  for a cleaner, distraction-free experience.  
 Ideal for users who want to focus on content and remove clutter from the interface.
 
 ---
@@ -11,13 +10,6 @@ Ideal for users who want to focus on content and remove clutter from the interfa
   - Hide sidebar sections: Home, Shorts, Subscriptions, Explore, History, etc.
   - Remove unwanted suggestions and distractions.
   - Keep only the elements you need.
-
-- 📸 **Instagram UI Customization**:
-  - Hide buttons: Home, Search, Explore, Reels, Messages, Notifications, etc.
-  - Remove “Suggested for You” and “About” sections.
-  - Optional compact layout and maximized story view.
-
-- 🌓 **Dark Mode**: Toggle between light and dark themes.
 
 - 💾 **Persistent Settings**: All customizations are saved using Chrome's local storage and restored automatically.
 
@@ -43,12 +35,9 @@ Launch Google Chrome.
 
 In the address bar, enter:
 
-arduino
-Copy
-Edit
-chrome://extensions/
+```chrome://extensions/```
 Or use the menu:
-⋮ → More Tools → Extensions
+```⋮ → More Tools → Extensions```
 
 ### ✅ Step 3: Enable Developer Mode
 In the top-right corner of the Extensions page, toggle the Developer mode switch ON.
@@ -61,7 +50,7 @@ Select the folder containing the extension files (the one with manifest.json).
 ### ✅ Step 5: Use the Extension
 Click the extension icon in the Chrome toolbar.
 
-Use the toggle switches to hide or show UI sections on YouTube and Instagram.
+Use the toggle switches to hide or show UI sections on YouTube.
 
 ```Refresh the page to apply the changes.```
 
