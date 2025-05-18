@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Cleaner</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+      width: 280px;
+      background-color: black;
+      color: white;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .group {
+      border: 1px solid #555;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #111;
+    }
+    .toggle-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .main-toggle {
+      font-weight: bold;
+    }
+    .sub-toggle {
+      margin-left: 16px;
+      font-size: 90%;
+      opacity: 0.9;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #444;
+      border-radius: 34px;
+      transition: 0.2s;
+    }
+    .slider:before {
+      content: "";
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+    input:checked + .slider {
+      background-color: #4caf50;
+    }
+    input:checked + .slider:before {
+      transform: translateX(20px);
+    }
+    .nested-group {
+      margin-left: 12px;
+      padding-left: 10px;
+      border-left: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="group">
+    <div class="toggle-label main-toggle">
+    <span>Refresh the page to apply changes</span>
+    </div>
+
+    <h3>YouTube Settings</h3>
+
+    <div class="toggle-label main-toggle">
+      <span>Hide Home Section</span>
+      <label class="switch">
+        <input type="checkbox" id="firstSectionToggle"  >
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="nested-group" id="homeChildren">
+      <div class="toggle-label sub-toggle"><span>Hide Home</span><label class="switch"><input type="checkbox" id="homeItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Shorts</span><label class="switch"><input type="checkbox" id="shortsItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Subscriptions</span><label class="switch"><input type="checkbox" id="subscriptionsItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide You</span><label class="switch"><input type="checkbox" id="youItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide History</span><label class="switch"><input type="checkbox" id="historyItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Playlist</span><label class="switch"><input type="checkbox" id="playlistItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Your Videos</span><label class="switch"><input type="checkbox" id="yourVideosItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Watch later</span><label class="switch"><input type="checkbox" id="watchLaterItemToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Liked videos</span><label class="switch"><input type="checkbox" id="likedVideosItemToggle"  ><span class="slider"></span></label></div>
+    </div>
+
+    <div class="toggle-label main-toggle"><span>Hide Subscriptions Section</span><label class="switch"><input type="checkbox" id="thirdSectionToggle"  ><span class="slider"></span></label></div>
+
+    <div class="toggle-label main-toggle"><span>Hide Explore Section</span><label class="switch"><input type="checkbox" id="exploreToggle"  ><span class="slider"></span></label></div>
+
+    <div class="nested-group" id="exploreChildren">
+      <div class="toggle-label sub-toggle"><span>Hide Trending</span><label class="switch"><input type="checkbox" id="trendingToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Shopping</span><label class="switch"><input type="checkbox" id="shoppingToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Music</span><label class="switch"><input type="checkbox" id="musicToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Movies</span><label class="switch"><input type="checkbox" id="moviesToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Live</span><label class="switch"><input type="checkbox" id="liveToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Gaming</span><label class="switch"><input type="checkbox" id="gamingToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide News</span><label class="switch"><input type="checkbox" id="newsToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Sports</span><label class="switch"><input type="checkbox" id="sportsToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Courses</span><label class="switch"><input type="checkbox" id="coursesToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Fashion & Beauty</span><label class="switch"><input type="checkbox" id="fashionToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Podcasts</span><label class="switch"><input type="checkbox" id="podcastsToggle"  ><span class="slider"></span></label></div>
+    </div>
+
+    <div class="toggle-label main-toggle"><span>Hide 'More from YouTube'</span><label class="switch"><input type="checkbox" id="moreYTToggle"  ><span class="slider"></span></label></div>
+    <div class="toggle-label main-toggle"><span>Hide Settings Section</span><label class="switch"><input type="checkbox" id="fifthSectionToggle"  ><span class="slider"></span></label></div>
+    <div class="toggle-label main-toggle"><span>Hide Footer</span><label class="switch"><input type="checkbox" id="footerToggle"  ><span class="slider"></span></label></div>
+  
+    <div class="toggle-label main-toggle"><span>Hide Button Section</span><label class="switch"><input type="checkbox" id="mastheadButtonsToggle"  ><span class="slider"></span></label></div>
+    
+    <div class="nested-group" id="buttonChildren">
+      <div class="toggle-label sub-toggle"><span>Hide Create Button</span><label class="switch"><input type="checkbox" id="createButtonsToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Notification</span><label class="switch"><input type="checkbox" id="notiButtonsToggle"  ><span class="slider"></span></label></div>
+      <div class="toggle-label sub-toggle"><span>Hide Menu</span><label class="switch"><input type="checkbox" id="menuButtonsToggle"  ><span class="slider"></span></label></div>
+    </div>
+
+    </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
