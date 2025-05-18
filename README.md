@@ -28,7 +28,7 @@ You can either:
 - Clone the project using Git:
 
   ```bash
-  git clone https://github.com/your-username/ui-cleaner-extension.git
+  git clone https://github.com/shivnathchavan/YT-DOM-Tweaker.git
 ``
 ### ✅ Step 2: Open the Chrome Extensions Page
 Launch Google Chrome.
