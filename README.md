@@ -64,9 +64,6 @@ Click the Reload button under the extension.
 This re-applies your changes without needing to reinstall the extension.
 
 ### 📁 Project Folder Structure
-bash
-Copy
-Edit
 ```📁 ui-cleaner-extension/
 ├── manifest.json              # Extension config (permissions, files)
 ├── popup.html                 # UI for extension popup
@@ -75,20 +72,9 @@ Edit
 ├── styles.css                 # Styles for popup.html
 └── icon.png
 ```
-### 🔐 Permissions Used
-activeTab – Access and modify the currently active tab
-
-storage – Save and restore user toggle settings
-
-scripting – Dynamically inject content scripts
-
-tabs – Identify and communicate with active tabs
+### 🔐 
 
 All data stays in your browser — nothing is sent or collected externally.
 
-📬 Support
-For questions, suggestions, or bug reports, open an issue or pull request in the GitHub repository.
-
-🧽 Customize your online experience. Hide the noise. Focus on what matters.
 
 ---
